@@ -2,6 +2,8 @@
     font-family:'Times New Roman', Times, serif;
     padding: 0;
 
+    outline: 0;
+
 }
 #logo > a {
     color: inherit !important;
@@ -105,4 +107,47 @@ header {
 
 .burger {
     display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #fff !important;
+    }
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 1px 8px #ddd;
+        z-index: 1;
+    }
+    ul {
+        display: none;
+    }
+    .menu-open .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #fff;
+    }
+    .menu-toggle {
+        display: block;
+        background: #fff;
+    }
+    .menu-open .nav {
+        display: flex;
+    }
+    nav.nav {
+        border-radius: 20px;
+    }
+    .menu-toggle {
+        padding: 5px;
+    }
 }
