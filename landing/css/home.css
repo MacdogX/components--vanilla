@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+section {
+    
+    padding: 20px;
+    min-height: auto;
+   
+}
+.home{
+    text-align: center;
+}
+.containerhome {
+    display: grid;
+    gap: 20px;
+    grid-template: 
+      "home" 600px
+      "cardd" 300px
+      "footer" 100px
+    ;
+  }
+
+  .home {
+    background-color: aqua;
+    grid-area: home;
+  }
+
+  .cardd {
+    background-color: bisque;
+    grid-area: cardd;
+  }
+
+  .footer {
+    background-color: brown;
+    grid-area: footer;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card1,
+  .card2 {
+    width: calc(50% - 10px); /* Calc con 10px para el gap */
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .card-container {
+      justify-content: flex-start;
+    }
+  }
