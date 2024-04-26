@@ -9,7 +9,6 @@ body{
 .hero{
     background-size: cover;
 }
-
 .container{
     margin: 0 auto;
     width: 90%;
@@ -25,7 +24,6 @@ body{
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
-
 }
 img.nav_icon {
     width: 24px;
@@ -34,11 +32,10 @@ img.nav_icon {
 
 .nav_logo{
     font-size: 2.5rem;
-    color: white;
+    color: black;
     z-index: 1;
 }
 .nav_links{
-   
     background-color:#000 ;
     position: absolute;
     top: 0;
@@ -50,7 +47,6 @@ img.nav_icon {
     align-content:center ;
     gap: 2em;
     padding-left: 5%;
-
     transform: var(--state-menu);
     transition: .3s transform;
 }
@@ -73,7 +69,7 @@ img.nav_icon {
 .nav:target{
     --state-menu:translate(0);
     --state-close:scale(1);
- --state-hamburguer:scale(0);
+    --state-hamburguer:scale(0);
 }
 .nav_item{
     list-style: none;
@@ -88,45 +84,32 @@ img.nav_icon {
 @media(min-width:768px){
 
     .nav{
-      
         --state-hamburguer:scale(0);
         --state-menu:translate(0);
-  
-    
     } 
     .nav:target{
-        
         --state-close:scale(0);
-     
+    }
+    .nav_links{
+        padding:0 ;
+        background-color:unset ;
+        position: unset;
+        grid-auto-flow:column;
+        gap: 1.5em;
+        transform: unset;
+        grid-column: -2/-1;
+        grid-row:1/2;
+    }
+    .nav_link{
+        font-size: 1rem;
+        letter-spacing: none;
+        color: #000;
+    }
+    .nav_logo{
+        font-size: 2.5rem;
+        color: black;
+        z-index: 1;
     }
 
-    
-.nav_links{
-   padding:0 ;
-    background-color:unset ;
-    position: unset;
-    grid-auto-flow:column;
-
-
-  
-    gap: 1.5em;
-
-
-    transform: unset;
-    grid-column: -2/-1;
-    grid-row:1/2;
-
-}
-.nav_link{
-    font-size: 1rem;
-    letter-spacing: none;
-
-    color: #000;
-}
-.nav_logo{
-    font-size: 2.5rem;
-    color: black;
-    z-index: 1;
-}
 
 }
