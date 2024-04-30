@@ -15,7 +15,9 @@ section {
 }
 .home{
     text-align: center;
-}section.home{
+}
+/*
+section.home{
     
     flex-shrink: 1;
     flex-basis: 0%;
@@ -28,26 +30,84 @@ section {
     height: 100%;
       width: 100%;
       filter: invert(1);
-
+      position: relative;
 }
 h3.h3til {
     font-size: 5.0rem;
     letter-spacing: 10px;
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Agregar una sombra de texto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 
     padding-bottom: 2.5rem;
 }
+*/
+/*
 p.parrafo {
     font-size: 1.3rem;
     letter-spacing: 1.6px;
     color: white; /* Cambiar el color del texto a blanco */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Agregar una sombra de texto */
+ /*   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Agregar una sombra de texto */
+/*}
+*/
+/***** PRUEBAS FONDO ****/
+
+
+section.home {
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
+    position: relative;
+    background-image: url(../assets/y0AE_bg-grid.svg); /* Establece la imagen de fondo */
+    background-repeat: repeat;
+    background-size: 200px;
+    height: 100vh;/*
+    background-attachment: fixed;
+   background-size: cover;
+    */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
 }
+
+.homer {
+    position: relative; /* Asegura que las letras estén encima del fondo */
+    text-align: center;
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 20px; /* Añade un poco de espacio alrededor del texto */
+}
+
+.h3til {
+    font-size: 5.0rem;
+    letter-spacing: 10px;
+    padding-bottom: 2.5rem;
+    margin-bottom: 10px;
+    color: #FF7614;
+}
+
+.parrafo {
+    font-size: 1.3rem;
+    letter-spacing: 1.6px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    padding: 20px; /* Añade un poco de espacio alrededor del texto */
+}
+  
+ 
+  
+ .cardd{
+    position: relative;
+ }
+  
+  
+
+
+
+
+/************ FIN PRUEBAS ***/
 .containerhome {
     display: grid;
     gap: 20px;
     grid-template: 
-      "home" 600px
+      "home" 700px
       "cardd" 300px
       "footer" 100px
     ;
@@ -58,8 +118,10 @@ p.parrafo {
   }
 
   .cardd {
-   
+   background-color: white;
     grid-area: cardd;
+    display: flex;
+  justify-content: center;
   }
 
   .footer {
@@ -71,17 +133,25 @@ p.parrafo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .card1,
   .card2 {
     width: calc(50% - 10px); /* Calc con 10px para el gap */
     margin-bottom: 20px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .card-body {
+    padding: 20px;
   }
 
   @media (min-width: 768px) {
     .card-container {
-      justify-content: flex-start;
+     /* justify-content: flex-start;*/
     }
     h3.h3til {
         font-size: 5.0rem;
@@ -89,5 +159,6 @@ p.parrafo {
   
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         padding-bottom: 2.5rem;
+        color: #FF7614;
     }
   }
