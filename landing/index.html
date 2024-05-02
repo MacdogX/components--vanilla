@@ -43,52 +43,48 @@
         </nav>
           
     </header>   
-
-
-    <div class="containerhome">
-
-
-        <section class="home">
-            <div class="homer">
-                <h3 class="h3til">Finance App</h3>
-                <p class="parrafo">Optimiza la gestión financiera de tu empresa con nuestro software especializado. Toma decisiones más acertadas, reduce costos y maximiza tus ganancias. ¡Impulsa el crecimiento de tu negocio hoy mismo!</p>
+    <section>
+        <div class="contenedor">
+            <div class="text">
+                <h2 class="titulo">Finanzas</h2>
+                <p>Con nuestra aplicación/web de finanzas, tendrás tus finanzas siempre al alcance de tu mano. Organiza tus gastos, realiza un seguimiento de tus ingresos y toma el control de tu dinero de manera fácil y rápida.</p>
+                <button id="modalBtn" class="boton">Ingrese</button>
             </div>
-        </section>
-
-        <section class="cardd">
-            <div class="card-container">
-            <div class="card1" style="width: 18rem;">
-                <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle 1</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            
-            <div class="card2" style="width: 18rem;">
-                <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle 2</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            </div>
-        </section>
-
-
+            <img src="assets/calculo.png" alt="" class="ico">
+        </div>
+    </section>
         
-        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Iniciar sesión</h2>
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="username">Usuario:</label>
+                  <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="boton">Ingresar</button>
+                </div>
+                <p id="errorMessage" style="color: red; display: none;">Por favor, ingrese un usuario y contraseña válidos.</p>
+              </form>
+            </div>
+          
+          </div>
        
     
-        <footer class="footer">
-            <p>@Copyright</p>
-        </footer>
-        
-    </div>
+   
+   
 </body>
+<script src="js/script.js">
+
+</script>
 </html>
 
