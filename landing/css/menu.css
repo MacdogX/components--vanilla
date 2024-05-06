@@ -22,7 +22,7 @@ body{
     --state-close:scale(0);
     --state-hamburguer:scale(1);
     --state-menu:translate(-100%);
-    padding: 40px 0;
+    padding: 25px 0;
     display: grid;
     justify-content: space-between;
     align-items: center;

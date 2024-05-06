@@ -45,5 +45,6 @@ loginForm.addEventListener("submit", function(event) {
 
     // Por ahora, solo mostramos un mensaje de éxito
     alert("Usuario y contraseña válidos. ¡Bienvenido!");
+    location.href ="view/ingreso.html";
     modal.style.display = "none";
 });
