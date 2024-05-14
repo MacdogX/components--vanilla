@@ -13,7 +13,7 @@ section {
 }
 /* nueva section*/
 section {
-    background: #FAF9F0;
+    background: #F4F4F4;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +31,18 @@ section {
     max-width: 750px;
 }
 .contenedor h2.titulo {
-    color: #FF5722;
+    color: #515070;
     font-size: 4.5em;
     letter-spacing: 10px;
 }
 .contenedor p {
+ 
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     margin-bottom: 20px;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px;
 }
 .contenedor button {
     padding: 10px 20px;
